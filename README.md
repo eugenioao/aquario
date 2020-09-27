@@ -52,9 +52,7 @@
   
 
  *****************************************************************
-
-  Definição dos canais do servidor MQTT
-  
+#  Definição dos canais do servidor MQTT
   ----------------------+----------------------------------------
   
   CHAVE                 |  DESCRIÇÃO
@@ -91,7 +89,7 @@
        Adafruit.com para uma conta gratuita.
 
  *****************************************************************
-  Definição das Portas do controlador ESP8266
+#  Definição das Portas do controlador ESP8266
  *****************************************************************
 
   GPIO5   (D1) - Branco
