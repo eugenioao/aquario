@@ -38,36 +38,63 @@
   Definição padrão para cada canal
   
   --------------+-------+----------+--------+--------
+  
       Canal     | ligar | desligar | efeito | valor
+      
   --------------+-------+----------+--------+--------
+  
    1-Branco     |  13   |    20    |   50   |  95
+   
   --------------+-------+----------+--------+--------
+  
    2-Azul       | 9:30  |    21    |   40   |  95
+   
   --------------+-------+----------+--------+--------
+  
    3-Azul Royal |  10   |   20:30  |   30   |  95
+   
   --------------+-------+----------+--------+--------
+  
    4-Violeta    |   9   |    20    |   30   |  85
+   
   --------------+-------+----------+--------+--------
+  
   
 
  *****************************************************************
 
   Definição dos canais do servidor MQTT
+  
   ----------------------+----------------------------------------
+  
   CHAVE                 |  DESCRIÇÃO
+  
   ----------------------+----------------------------------------
+  
   canal-branco          | Serie do Canal Branco
+  
   canal-azul            | Serie do Canal Azul
+  
   canal-azul-royal      | Serie do canal Azul Royal
+  
   canal-violeta         | Serie do Canal Violeta
+  
   ----------------+----------------------------------------------
+  
   temp-luminaria        | Temperatura Ligar Coolers Luminaria
+  
   temp-aquario          | Temperatura Ligar Coolers Aquario
+  
   ----------------------+----------------------------------------
+  
   tempo-real.canais-pwm | Valores dos Canais PWM
+  
   ----------------------+----------------------------------------
+  
   testes.canais         | Testar os canais individualmente
+  
   ----------------------+----------------------------------------
+  
   OBS: Os canais no MQTT Server irão receber os valores separados
        por ponto e virgula. Foi feito desta forma para não
        ultrapassar a quantiade de filas permitida pelo site
