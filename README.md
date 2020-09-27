@@ -35,7 +35,7 @@
 
  *****************************************************************
 
-  Definição padrão para cada canal
+  # Definição padrão para cada canal
   
   --------------+-------+----------+--------+--------
       Canal     | ligar | desligar | efeito | valor
@@ -105,8 +105,14 @@
   3V3     (3V) - Positivo Senores de temperatura
   
   GND      (G) - Negativo Senores de temperatura
+  
   GPIO14  (D5) - Violeta
+  
   GPIO13  (D7) - Cooler Luminaria
+  
   GPIO15  (D8) - Cooler Aquario
+  
   GPIO9  (SD2) -
+  
   GPIO10 (SD3) -
+
