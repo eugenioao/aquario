@@ -105,10 +105,15 @@
  *****************************************************************
 
   GPIO5   (D1) - Branco
+  
   GPIO4   (D2) - Azul Royal
+  
   GPIO0   (D3) - Azul
+  
   GPIO2   (D4) - Senores de temperatura
+  
   3V3     (3V) - Positivo Senores de temperatura
+  
   GND      (G) - Negativo Senores de temperatura
   GPIO14  (D5) - Violeta
   GPIO13  (D7) - Cooler Luminaria
