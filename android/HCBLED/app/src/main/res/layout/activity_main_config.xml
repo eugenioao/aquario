@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_below="@+id/tb_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fragment_container"
+            android:layout_width="398dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/inc_tb_bottom"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="374dp"
+                            android:layout_height="wrap_content"
+                            android:text=" Configuração da Luminária"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="374dp"
+                            android:layout_height="wrap_content"
+                            android:text=" Canais"
+                            android:textColor="#0047b3"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TextoBranco"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center_horizontal"
+                            android:text="BRANCO"
+                            android:textColor="#673AB7"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TableLayout
+                            android:id="@+id/tableLayout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="0,1">
+
+                            <TableRow
+                                android:id="@+id/tableBranco"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/TextoHoraLigarBranco"
+                                    android:layout_width="7dp"
+                                    android:layout_column="0"
+                                    android:text="  Ligar">
+
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/HoraLigarBranco"
+                                    android:layout_width="63dp"
+                                    android:layout_column="1"
+                                    android:ems="20"
+                                    android:focusable="false"
+                                    android:onClick="PegarHoraLigarBranco"
+                                    android:text="00:00" />
+
+                                <TextView
+                                    android:id="@+id/TextoHoraDesligarBranco"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:gravity="right"
+                                    android:text="Desligar  " />
+
+                                <EditText
+                                    android:id="@+id/HoraDesligarBranco"
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="3"
+                                    android:ems="20"
+                                    android:focusable="false"
+                                    android:onClick="PegarHoraDesligarBranco"
+                                    android:text="00:00" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <TextView
+                            android:id="@+id/PercEfeitoBranco"
+                            android:layout_width="181dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Tempo para Efeito: 30m" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarEfeitoBranco"
+                            android:layout_width="256dp"
+                            android:layout_height="35dp"
+                            android:max="60"
+                            android:progress="30" />
+
+                        <TextView
+                            android:id="@+id/PercBranco"
+                            android:layout_width="181dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Percentual: 60%" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarBranco"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/TextoAzul"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center_horizontal"
+                            android:text="AZUL"
+                            android:textColor="#673AB7"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TableLayout
+                            android:id="@+id/tableLayoutAzul"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="0,1">
+
+                            <TableRow
+                                android:id="@+id/tableAzul"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/TextoHoraLigarAzul"
+                                    android:layout_width="7dp"
+                                    android:layout_column="0"
+                                    android:text="  Ligar">
+
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/HoraLigarAzul"
+                                    android:layout_width="63dp"
+                                    android:layout_column="1"
+                                    android:ems="20"
+                                    android:focusable="false"
+                                    android:onClick="PegarHoraLigarAzul"
+                                    android:text="00:00" />
+
+                                <TextView
+                                    android:id="@+id/TextoHoraDesligarAzul"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:gravity="right"
+                                    android:text="Desligar  " />
+
+                                <EditText
+                                    android:id="@+id/HoraDesligarAzul"
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="3"
+                                    android:ems="20"
+                                    android:focusable="false"
+                                    android:onClick="PegarHoraDesligarAzul"
+                                    android:text="00:00" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <TextView
+                            android:id="@+id/PercEfeitoAzul"
+                            android:layout_width="181dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Tempo para Efeito: 30m" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarEfeitoAzul"
+                            android:layout_width="256dp"
+                            android:layout_height="35dp"
+                            android:max="60"
+                            android:progress="30" />
+
+                        <TextView
+                            android:id="@+id/PercAzul"
+                            android:layout_width="150dp"
+                            android:layout_height="25dp"
+                            android:text="  Percentual: 0%"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarAzul"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/TextoAzulRoyal"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center_horizontal"
+                            android:text="AZUL ROYAL"
+                            android:textColor="#673AB7"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TableLayout
+                            android:id="@+id/tableLayoutAzulRoyal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="0,1">
+
+                            <TableRow
+                                android:id="@+id/tableAzulRoyal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/TextoHoraLigarAzulRoyal"
+                                    android:layout_width="7dp"
+                                    android:layout_column="0"
+                                    android:text="  Ligar">
+
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/HoraLigarAzulRoyal"
+                                    android:layout_width="63dp"
+                                    android:layout_column="1"
+                                    android:ems="20"
+                                    android:focusable="false"
+                                    android:onClick="PegarHoraLigarAzulRoyal"
+                                    android:text="00:00" />
+
+                                <TextView
+                                    android:id="@+id/TextoHoraDesligarAzulRoyal"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:gravity="right"
+                                    android:text="Desligar  " />
+
+                                <EditText
+                                    android:id="@+id/HoraDesligarAzulRoyal"
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="3"
+                                    android:ems="20"
+                                    android:focusable="false"
+                                    android:onClick="PegarHoraDesligarAzulRoyal"
+                                    android:text="00:00" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <TextView
+                            android:id="@+id/PercEfeitoAzulRoyal"
+                            android:layout_width="181dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Tempo para Efeito: 30m" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarEfeitoAzulRoyal"
+                            android:layout_width="256dp"
+                            android:layout_height="35dp"
+                            android:max="60"
+                            android:progress="30" />
+
+                        <TextView
+                            android:id="@+id/PercAzulRoyal"
+                            android:layout_width="150dp"
+                            android:layout_height="25dp"
+                            android:text="  Percentual: 0%"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarAzulRoyal"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+                        <TextView
+                            android:id="@+id/TextoVioleta"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center_horizontal"
+                            android:text="VIOLETA"
+                            android:textColor="#673AB7"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TableLayout
+                            android:id="@+id/tableLayoutVioleta"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="0,1">
+
+                            <TableRow
+                                android:id="@+id/tableVioleta"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/TextoHoraLigarVioleta"
+                                    android:layout_width="7dp"
+                                    android:layout_column="0"
+                                    android:text="  Ligar">
+
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/HoraLigarVioleta"
+                                    android:layout_width="63dp"
+                                    android:layout_column="1"
+                                    android:ems="20"
+                                    android:focusable="false"
+                                    android:onClick="PegarHoraLigarVioleta"
+                                    android:text="00:00" />
+
+                                <TextView
+                                    android:id="@+id/TextoHoraDesligarVioleta"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:gravity="right"
+                                    android:text="Desligar  " />
+
+                                <EditText
+                                    android:id="@+id/HoraDesligarVioleta"
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="3"
+                                    android:ems="20"
+                                    android:focusable="false"
+                                    android:onClick="PegarHoraDesligarVioleta"
+                                    android:text="00:00" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <TextView
+                            android:id="@+id/PercEfeitoVioleta"
+                            android:layout_width="181dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Tempo para Efeito: 30m" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarEfeitoVioleta"
+                            android:layout_width="256dp"
+                            android:layout_height="35dp"
+                            android:max="60"
+                            android:progress="30" />
+
+                        <TextView
+                            android:id="@+id/PercVioleta"
+                            android:layout_width="150dp"
+                            android:layout_height="25dp"
+                            android:text="  Percentual: 0%"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarVioleta"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="45dp"
+                            android:text=" Temperatura"
+                            android:textColor="#b30000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTempLumaria"
+                            android:layout_width="220dp"
+                            android:layout_height="25dp"
+                            android:text="  Luminaria - Ligar Coolers em: 0°"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarTempLumaria"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:id="@+id/tvTempAquario"
+                            android:layout_width="220dp"
+                            android:layout_height="25dp"
+                            android:text="  Aquario - Ligar Coolers em: 0°"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <SeekBar
+                            android:id="@+id/seekBarTempAquario"
+                            android:layout_width="192dp"
+                            android:layout_height="40dp"
+                            android:max="34" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="  " />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/fabSalvarEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_salvar_enviar"
+            app:fab_colorNormal="@color/colorBlue"
+            app:fab_colorPressed="@color/cardview_light_background" />
+
+    </FrameLayout>
+
+</RelativeLayout>

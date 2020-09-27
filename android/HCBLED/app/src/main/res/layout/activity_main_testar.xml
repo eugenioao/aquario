@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:padding="16dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:text="Testar Canais da Luminária"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="374dp"
+                android:layout_height="48dp"
+                android:text="Canais"
+                android:textColor="#0047b3"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextoBranco"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:text="BRANCO"
+                android:textColor="#673AB7"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PercBranco"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:text="  Percentual: 0%" />
+
+            <SeekBar
+                android:id="@+id/seekBarBranco"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/TextoAzul"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:text="AZUL"
+                android:textColor="#673AB7"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PercAzul"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:text="  Percentual: 0%"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBarAzul"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/TextoAzulRoyal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:text="AZUL ROYAL"
+                android:textColor="#673AB7"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PercAzulRoyal"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:text="  Percentual: 0%"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBarAzulRoyal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/TextoVioleta"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:text="VIOLETA"
+                android:textColor="#673AB7"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PercVioleta"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:text="  Percentual: 0%"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBarVioleta"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Switch
+                android:id="@+id/switchLigarTudo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Ligar/Desligar Todos os Canais" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</ScrollView>

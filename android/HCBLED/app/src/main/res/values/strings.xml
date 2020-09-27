@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HCB LED</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="canais">Canais</string>
+    <string name="branco_0">Branco: 0%</string>
+    <string name="violeta_0">Violeta: 0%</string>
+    <string name="azul_royal_0">Azul Royal: 0%</string>
+    <string name="azul_0">Azul: 0%</string>
+    <string name="luminaria_ligar_coolers_em_0">Luminaria - Ligar Coolers em: 0°</string>
+    <string name="aquario_ligar_coolers_em_0">Aquario - Ligar Coolers em: 0°</string>
+    <string name="resumo_das_configura_es">Resumo das Configurações</string>
+    <string name="imageButtonConfig">Tela de Configuração</string>
+    <string name="salvar_pwm">Salvar/Enviar</string>
+
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewParametros"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="Parâmetros Atuais"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="248dp"
+            android:layout_height="40dp"
+            android:text="Canais"
+            android:textColor="#0047b3"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PercBranco"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="Branco: 60%"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarBranco"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="60" />
+
+        <TextView
+            android:id="@+id/PercAzul"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="Azul: 75%"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarAzul"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="75" />
+
+        <TextView
+            android:id="@+id/PercAzulRoyal"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="Azul Royal: 75%"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarAzulRoyal"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="75" />
+
+        <TextView
+            android:id="@+id/PercVioleta"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="Violeta: 50%"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarVioleta"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="50" />
+
+        <TextView
+            android:layout_width="248dp"
+            android:layout_height="40dp"
+            android:text="Temperatura"
+            android:textColor="#0047b3"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PercTemperaturaLumaria"
+            android:layout_width="220dp"
+            android:layout_height="25dp"
+            android:text="Luminaria: 43°"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLuminaria"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="43" />
+
+        <TextView
+            android:id="@+id/PercTemperaturaAquario"
+            android:layout_width="220dp"
+            android:layout_height="25dp"
+            android:text="Aquario: 26.5°"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarAquario"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="26" />
+
+        <TextView
+            android:id="@+id/valorPH"
+            android:layout_width="248dp"
+            android:layout_height="40dp"
+            android:text="PH: 8.2ppm"
+            android:textColor="#0047b3"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="0.1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imageButtonConfig"
+            android:layout_width="80dp"
+            android:layout_height="79dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="onClickConfig"
+            app:srcCompat="@drawable/ic_baseline_settings_48"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButtonTeste"
+            android:layout_width="80dp"
+            android:layout_height="79dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_luz_azulroyal_48"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
