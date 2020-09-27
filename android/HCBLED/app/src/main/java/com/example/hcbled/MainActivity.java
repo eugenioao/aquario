@@ -24,11 +24,11 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     static String MQTTHOST = "tcp://io.adafruit.com:1883";
-    static String USERNAME = "iigenio";
-    static String PASSWORD = "aio_PEDW50tYTMrEWDidOoDpMvFlZEVN";
+    static String USERNAME = "USERNAME";
+    static String PASSWORD = "aio_CODE";
 
     // CANAIS
-    String feedsPWM = "iigenio/feeds/tempo-real.canais-pwm";
+    String feedsPWM = USERNAME + "/feeds/tempo-real.canais-pwm";
 
     String tmpFeed = "";
 

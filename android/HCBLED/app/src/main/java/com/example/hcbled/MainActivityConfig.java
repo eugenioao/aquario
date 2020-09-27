@@ -611,18 +611,18 @@ public class MainActivityConfig extends AppCompatActivity {
     public void Publicar_Salvar() {
 
         String MQTTHOST = "tcp://io.adafruit.com:1883";
-        String USERNAME = "iigenio";
-        String PASSWORD = "aio_PEDW50tYTMrEWDidOoDpMvFlZEVN";
+        String USERNAME = "USERNAME";
+        String PASSWORD = "aio_CODE";
 
         // CANAIS
-        String feedsBranco = "iigenio/feeds/canal-branco";
-        String feedsAzul = "iigenio/feeds/canal-azul";
-        String feedsAzulRoyal = "iigenio/feeds/canal-azul-royal";
-        String feedsVioleta = "iigenio/feeds/canal-violeta";
+        String feedsBranco = USERNAME + "/feeds/canal-branco";
+        String feedsAzul = USERNAME + "/feeds/canal-azul";
+        String feedsAzulRoyal = USERNAME + "/feeds/canal-azul-royal";
+        String feedsVioleta = USERNAME + "/feeds/canal-violeta";
 
         // TEMPERATURA
-        String feedsTempArquario = "iigenio/feeds/temp-aquario";
-        String feedsTempLuminaria = "iigenio/feeds/temp-luminaria";
+        String feedsTempArquario = USERNAME + "/feeds/temp-aquario";
+        String feedsTempLuminaria = USERNAME + "/feeds/temp-luminaria";
 
         String tmpHoraLigarBranco = HoraLigarBranco.getText().toString();
         String tmpHoraDesligarBranco = HoraDesligarBranco.getText().toString();
