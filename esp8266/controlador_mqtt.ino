@@ -123,8 +123,8 @@ NTPClient timeClient(ntpUDP, "0.br.pool.ntp.org");
 // Definições para o site Adafruit IO
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "iigenio" // Nome de login do site io.adafruit.com
-#define AIO_KEY         "aio_PEDW50tYTMrEWDidOoDpMvFlZEVN" // Chave criada no site io.adafruit.com
+#define AIO_USERNAME    "USERNAME" // Nome de login do site io.adafruit.com
+#define AIO_KEY         "aio_CODE" // Chave criada no site io.adafruit.com
 
 WiFiClient client;
 
